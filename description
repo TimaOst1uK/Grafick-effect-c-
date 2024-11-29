@@ -1,0 +1,27 @@
+How It Works:
+Framework Used:
+The code uses Python's built-in tkinter library to create a window and manage graphical elements.
+
+Window Setup:
+
+A Tkinter window (Tk) serves as the application canvas.
+The canvas fills the entire window and is the space where lines and interactions are drawn.
+Line Generation:
+
+A grid of straight lines is drawn across the canvas at predefined intervals.
+Each line is represented by two endpoints.
+Mouse Interaction:
+
+The program continuously tracks the cursor's position using the motion event handler.
+When the cursor approaches a line, the line "bends" away from the cursor by calculating new coordinates based on the cursor's proximity.
+Effect Logic:
+
+The distance between the cursor and the midpoint of each line determines how much the line bends.
+A bending factor is applied to shift the line away from the cursor's position.
+Dynamic Redraw:
+
+The canvas is cleared and redrawn in real-time as the mouse moves, ensuring the graphical effects update smoothly.
+Features:
+Dynamic Interaction: The effects are immediate and respond to the mouse movement in real-time.
+Customizable Grid: The number of lines, their spacing, and the intensity of bending can be adjusted for different visual styles.
+Simple Graphics: This project focuses on lightweight rendering, making it suitable for beginners in graphical programming.
